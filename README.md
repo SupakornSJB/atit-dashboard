@@ -68,7 +68,7 @@ serves the app at `https://<relay-host>:5000/dashboard/` — handy for a demo wi
 process:
 
 ```bash
-npm run build -- --outDir ../ATITInfraNode/GameServer/wwwroot/dashboard --emptyOutDir
+npm run deploy     # = npm run build -- --outDir ../ATITInfraNode/GameServer/wwwroot/dashboard --emptyOutDir
 ```
 
 The app is built with `base: '/dashboard/'`, so it expects to live under that path either way.
@@ -80,7 +80,14 @@ The app is built with `base: '/dashboard/'`, so it expects to live under that pa
 - Not fully tested end to end.
 - **Round controls need an open admin API:** the relay protects `/api/admin/*` with an API key,
   but the dashboard only sends its JWT, so Start/End work only while the relay's
-  `IoTGame:AdminApiKey` is empty.
+  `IoTGame:AdminApiKey` is empty. With a key set, the resulting `401` also logs the operator
+  out (the Axios interceptor treats any `401` as an expired session).
 - `npx eslint .` reports 6 issues (2 × `react-hooks/refs` in `AlertFeed` / `useSecurityHub`,
   2 × `no-explicit-any` in `GameControls`, 2 × `react-refresh/only-export-components` in the
   `ui/` components). They don't affect the build.
+
+---
+
+## License
+
+MIT — see [LICENSE](LICENSE).

@@ -16,11 +16,11 @@ they occur.
 >
 > | Repo | Description |
 > |---|---|
-> | [ATITFinalProject](https://github.com/ATITFinalProject/ATITFinalProject) | Architecture + protocol docs |
-> | [ATITFinalProject-firmware](https://github.com/ATITFinalProject/ATITFinalProject-firmware) | ESP32 MicroPython |
-> | [ATITFinalProject-server](https://github.com/ATITFinalProject/ATITFinalProject-server) | ASP.NET relay server |
-> | [ATITFinalProject-unity](https://github.com/ATITFinalProject/ATITFinalProject-unity) | Unity game |
-> | **ATITFinalProject-dashboard** | **This project — React security dashboard** |
+> | [ATITFinalProject](https://github.com/SupakornSJB/ATITFinalProject) | Architecture + protocol docs |
+> | [atit_micropython](https://github.com/SupakornSJB/atit_micropython) | ESP32 MicroPython |
+> | [ATITInfraNode](https://github.com/SupakornSJB/ATITInfraNode) | ASP.NET relay server |
+> | [ATITProject](https://github.com/SupakornSJB/ATITProject) | Unity game |
+> | **atit-dashboard** | **This project — React security dashboard** |
 
 ---
 

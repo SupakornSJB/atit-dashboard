@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "type-check": "tsc --noEmit",
-    "deploy": "npm run build && cp -r dist/* ../ATITFinalProject-server/GameServer/wwwroot/dashboard/"
+    "deploy": "npm run build -- --outDir ../ATITInfraNode/GameServer/wwwroot/dashboard --emptyOutDir"
   },
   "dependencies": {
     "@microsoft/signalr": "^10.0.0",
